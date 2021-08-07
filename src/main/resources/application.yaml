@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: local
+logging.level.cz.grunwjir.csasdemo: DEBUG
+csas:
+  host: https://www.csas.cz
+  apiKey: INSERT-API-KEY
+gmaps:
+  apiKey: INSERT-API-KEY
