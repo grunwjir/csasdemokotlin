@@ -12,9 +12,9 @@ data class BranchData(val id: Int,
                       val address: String,
                       val city: String,
                       val postCode: String,
-                      val managerName: String,
+                      val managerName: String?,
                       val phones: List<String>?,
-                      val email: String,
+                      val email: String?,
                       @JsonProperty("equipment") val equipments: List<Equipment>?) {
 
     data class Equipment(val id: Int,

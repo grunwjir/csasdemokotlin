@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.GetMapping
 import io.swagger.annotations.ApiParam
 import io.swagger.v3.oas.annotations.Operation
-import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.RequestParam
 
 /**
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam
  *
  * @author Jiri Grunwald
  */
-@RequestMapping(value = ["/branches"], produces = [MediaType.APPLICATION_JSON_VALUE])
+@RequestMapping(value = ["/branches"])
 interface BranchController {
     @GetMapping
     @Operation(summary = "Searches Csas branches by its name or address")

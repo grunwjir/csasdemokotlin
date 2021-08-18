@@ -44,9 +44,9 @@ class BranchServiceImpl(private val gMapsService: GMapsService, private val csas
         return Branch(
             id = data.id,
             name = data.name,
-            manager = data.managerName,
+            manager = data.managerName ?: "",
             phones = data.phones ?: emptyList(),
-            email = data.email,
+            email = data.email ?: "",
             equipments = data.equipments?.map { it.name } ?: emptyList(),
             address = Branch.Address(
                 street = data.address,
